@@ -26,4 +26,22 @@ footerClass.classlist.add("main");
 
 // 7 - Remove the class main on the div with a class of footer.
 
+//use footerClass variable created for previous exercise
+
 footerClass.classList.remove("main");
+
+// 8 - Create a new li element.
+
+const newLiElement = document.createElement("li");
+
+// 9 - Give the li the text "four".
+
+const newText = document.createTextNode("four");
+newLiElement.appendChild(newText);
+
+//10 - Append the li to the ul element.
+
+const unordList = document.querySelector("ul");
+unordList.append(newLiElement);
+
+
