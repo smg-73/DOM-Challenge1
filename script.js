@@ -39,9 +39,19 @@ const newLiElement = document.createElement("li");
 const newText = document.createTextNode("four");
 newLiElement.appendChild(newText);
 
-//10 - Append the li to the ul element.
+// 10 - Append the li to the ul element.
 
 const unordList = document.querySelector("ul");
 unordList.append(newLiElement);
 
+// 11 - Loop over all of the lis inside the ol tag and give them a background color of "green".
 
+const olLiGreen = document.querySelectorAll("ol li");
+for (i in olLiGreen) {
+  olLiGreen[i].style.backgroundColor = "green";
+}
+
+// 12 - Remove the div with a class of footer.
+
+const footerDiv = document.querySelector(".footer");
+footerDiv.remove();
